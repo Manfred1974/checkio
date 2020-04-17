@@ -5,6 +5,7 @@
 # Taken from mission Acceptable Password II
 
 # Taken from mission Acceptable Password I
+import re
 
 def is_acceptable_password(password: str) -> bool:
     if len(password) < 7:
@@ -107,7 +108,7 @@ if __name__ == '__main__':
     assert is_acceptable_password('12345678910') == True
     print("Coding complete? Click 'Check' to earn cool rewards!")
 
-import re
+
 
 def is_acceptable_password(password: str) -> bool:
     if len(password) < 7 or re.search('password', password, re.IGNORECASE):
